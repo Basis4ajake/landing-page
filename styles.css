@@ -75,7 +75,11 @@ main {
 
 button, .calltoaction {
     background-color: #3882F6;
-    margin: 50px 100px;
+    /* margin: 50px 100px; */
+}
+
+.btn1, .btn2 {
+    border-radius: 25px;
 }
 
 .action {
@@ -94,6 +98,10 @@ button, .calltoaction {
         display: flex;
         justify-content: space-evenly;
         min-height: 250px;
+}
+
+.calltoaction {
+    margin: 50px 100px;
 }
 
 .quote {
@@ -119,5 +127,6 @@ button, .calltoaction {
     justify-content: center;
     align-items: center;
     color: white;
+    padding: 32px;
 }
 

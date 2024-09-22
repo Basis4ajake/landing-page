@@ -1,24 +1,35 @@
 /* Stylesheet for Landing Page */
 
+/*  Reenable the below line to turn on outline lines */
+
+/* 
 * * * {
     outline: solid;
     outline-color: orange;
-}
+} 
+*/
 
 html {
 
 }
 
 body {
+    font-family: Roboto,'Open Sans', 'Helvetica Neue', sans-serif
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
 }
 
+*, *::before, *::after {
+    font-family: Roboto,'Open Sans', 'Helvetica Neue', sans-serif
+    
+} 
+
 header {
     display: flex;
     background-color: #1f2937;
+    padding: 0 75px;
 }
 
 .logo {
@@ -43,7 +54,8 @@ main {
 
 .hero {
     display: flex;
-    padding: 24px;
+    padding: 75px;
+
 }
 
 #heromain {
@@ -52,10 +64,10 @@ main {
     font-weight: 900;
 }
 
-.heroleft, .heroright {
-    flex: 1 0 50%;
+.heroleft {
+    flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-starts;
     align-items: center;
     flex-flow: row wrap;
 }
@@ -63,9 +75,10 @@ main {
 
 .heroright {
     background-color: grey;
-    margin: 24px;
-    flex: 1 0 auto;
-    padding: 60px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .secondary, a {
@@ -75,19 +88,24 @@ main {
 
 button, .calltoaction {
     background-color: #3882F6;
-    /* margin: 50px 100px; */
 }
 
 .btn1, .btn2 {
     border-radius: 25px;
+    min-width: 90px;
+    padding: 4px;
 }
 
-.action {
+.btn2 {
+    margin: auto;
+}
+
+.action-text {
+    margin: auto;
+}
+
+.action-header {
     color: white;
-}
-
-.information {
-
 }
 
 .infoheader {
@@ -102,6 +120,10 @@ button, .calltoaction {
 
 .calltoaction {
     margin: 50px 100px;
+    display: flex;
+    align-items: center;
+    padding: 32px;
+    min-height: 150px;
 }
 
 .quote {

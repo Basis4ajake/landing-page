@@ -12,6 +12,8 @@ html {
 body {
     display: flex;
     flex-direction: column;
+    padding: 0;
+    margin: 0;
 }
 
 header {
@@ -23,10 +25,11 @@ header {
     font-size: 24px;
     color: #f9faf8;
     margin-right: auto;
+    padding: 12px
 }
 
 a {
-
+  padding: 12px;
 }
 
 main {
@@ -72,6 +75,7 @@ main {
 
 button, .calltoaction {
     background-color: #3882F6;
+    margin: 50px 100px;
 }
 
 .action {
@@ -98,13 +102,22 @@ button, .calltoaction {
     color: #1f2937;
     font-weight: lighter;
     font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 100px;
 }
 
 .quoteauthor {
-    color: gray
+    color: gray;
+    margin-left: auto;
 }
 
 .copyright {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 

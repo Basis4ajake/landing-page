@@ -1,20 +1,37 @@
 /* Stylesheet for Landing Page */
 
+* * * {
+    outline: solid;
+    outline-color: orange;
+}
+
 html {
 
 }
 
 body {
-
+    display: flex;
+    flex-direction: column;
 }
 
-.header {
-
+header {
+    display: flex;
+    background-color: #1f2937;
 }
 
 .logo {
     font-size: 24px;
     color: #f9faf8;
+    margin-right: auto;
+}
+
+a {
+
+}
+
+main {
+    display:flex;
+    flex-direction: column;
 }
 
 .hero ,footer {
@@ -22,18 +39,57 @@ body {
 }
 
 .hero {
+    display: flex;
+    padding: 24px;
+}
+
+#heromain {
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 900;
 }
 
-.secondary, a.topnav {
+.heroleft, .heroright {
+    flex: 1 0 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+
+.heroright {
+    background-color: grey;
+    margin: 24px;
+    flex: 1 0 auto;
+    padding: 60px;
+}
+
+.secondary, a {
     font-size: 18px;
     color: #e5e7eb;
 }
 
-.btn1 {
+button, .calltoaction {
     background-color: #3882F6;
+}
+
+.action {
+    color: white;
+}
+
+.information {
+
+}
+
+.infoheader {
+    display: flex;
+    justify-content: center;
+}
+.infocards {
+        display: flex;
+        justify-content: space-evenly;
+        min-height: 250px;
 }
 
 .quote {
@@ -43,3 +99,12 @@ body {
     font-weight: lighter;
     font-style: italic;
 }
+
+.quoteauthor {
+    color: gray
+}
+
+.copyright {
+
+}
+
